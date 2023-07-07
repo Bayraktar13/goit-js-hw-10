@@ -1,5 +1,4 @@
 import { fetchBreeds, fetchCatByBreed } from './cat-api';
-import axios from 'axios';
 
 const breedSelect = document.querySelector('.breed-select');
 const loader = document.querySelector('.loader');
@@ -23,14 +22,14 @@ function hideError() {
 }
 
 function showCatInfo(cat) {
-  const breedName = cat.breeds[0].name;
-  const description = cat.breeds[0].description;
-  const temperament = cat.breeds[0].temperament;
+  const breedName = cat.breed.name;
+  const description = cat.breed.description;
+  const temperament = cat.breed.temperament;
 
   const html = `
     <img src="${cat.url}" alt="${breedName}">
     <h2>${breedName}</h2>
-    <p><strong>Description:</strong> ${description}</p>
+    <p class="test"><strong>Description:</strong> ${description}</p>
     <p><strong>Temperament:</strong> ${temperament}</p>
   `;
 
