@@ -1,5 +1,30 @@
 .cat-info img {
   max-width: 950px;
   height: auto;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
+.title {
+  font-style: italic;
+  color: brown;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.descriptions {
+  max-width: 950px;
+  font-size: 22px;
+  color: grey;
+}
+
+.temperament {
+  font-size: 22px;
+  color: grey;
+}
+
+.breed-select {
+  color: brown;
+  font-style: italic;
+}

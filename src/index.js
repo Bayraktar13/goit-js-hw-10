@@ -28,9 +28,9 @@ function showCatInfo(cat) {
 
   const html = `
     <img src="${cat.url}" alt="${breedName}">
-    <h2>${breedName}</h2>
-    <p class="test"><strong>Description:</strong> ${description}</p>
-    <p><strong>Temperament:</strong> ${temperament}</p>
+    <h2 class="title">${breedName}</h2>
+    <p class="descriptions"><strong>Description:</strong> ${description}</p>
+    <p class="temperament"><strong>Temperament:</strong> ${temperament}</p>
   `;
 
   catInfo.innerHTML = html;
